@@ -9,7 +9,7 @@ var TodoList = Backbone.Collection.extend({
 	model: app.Todo,
 
 	// Save all of the todo items under the '"todos-backbone"' namespace.
-	localstorage: new Backbone.LocalStorage('todos-backbone'),
+	localStorage: new Backbone.LocalStorage('todos-backbone'),
 
 	// Filter down the list of all todo items that are finished.
 	completed: function() {
@@ -40,4 +40,4 @@ var TodoList = Backbone.Collection.extend({
 });
 
 // Create our global collection of **Todos**.
-app.Todos = new Todolist();
+app.Todos = new TodoList();

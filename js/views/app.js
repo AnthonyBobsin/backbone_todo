@@ -23,7 +23,7 @@ app.AppView = Backbone.View.extend({
 	// collection, when items are added or changed. Kick things off by
 	// loading any preexisting todos that might be saved in *localStorage*.
 	initialize: function() {
-		this.allCheckBox = this.$('#toggle-all')[0];
+		this.allCheckbox = this.$('#toggle-all')[0];
 		this.$input = this.$('#new-todo');
 		this.$footer = this.$('#footer');
 		this.$main = this.$('#main');
